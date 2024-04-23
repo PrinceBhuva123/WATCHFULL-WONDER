@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(red, green, blue);  
+    position: relative;
+    isolation: isolate;
+}
+.navbar{
+    height: 15vh;
+    width: 85%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 110px;
+}
+.navlist{
+    display: flex;
+    gap: 40px;
+    
+}
+.navlist li{
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navlist a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    letter-spacing: 1px;
+}
+.navlist a:hover{
+    color: #f15b3d;
+
+}
+.navlist .fa-solid{
+    font-size: 20px;
+}
+.container::before{
+    content: "WW";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 400px;
+    font-family: "Dancing Script", cursive;
+    color: rgb(199, 199, 199);
+    opacity: .3;
+    z-index: -1;
+}
+.watch img{
+    border-radius: 30px;
+    height: 500px;
+    
+}
+.hero{
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content h1{
+    color: rgb(22,22,22);
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 5px;
+}
+.content p{
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 70% ;
+    margin: 20px 0px;
+}
+.content button{
+    border: none;
+    background-color: #000000;
+    padding: 18px 35px;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+}
+.content button:hover{
+    background-color: rgb(79, 169, 187);
+    border-radius: 20px;
+}
+.content .line{
+    width: 40%;
+    height: 10px;
+    background-color: #000000;
+    margin: 15px  0px;
+    border-radius: 10px;
+}
+.icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    right: 50px;
+    transform: translate(-50%,-50%);
+    gap: 30px;
+    background-color:black;
+    padding: 50px 10px;
+    border-radius: 50px;
+}
+.icons .fa-brands{
+    font-size: 27px;
+    color: white;
+
+}
+
+.watch-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    background-color: #ffffff; /* White background */
+}
+
+.watch-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    margin-left: 60px;
+    animation-name: prince;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes prince {
+ from{
+    width: 0px;
+ }
+ to{
+    width: 100%;
+ }
+}
+
+.watch-details {
+    text-align: right;
+}
+
+.watch-details h1, .watch-details p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-right: 220px;
+    animation-name: prince;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes prince {
+ from{
+    width: 0px;
+ }
+ to{
+    width: 100%;
+ }
+}
+
+.price {
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+/* style.css */
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content1 {
+    flex-basis: 50%;
+    width: 50px;
+    padding-right: 30px; /* Add some padding to the right of the text */
+}
+.content1 h1{
+   font-size: 50px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-bottom: 40px;
+}
+
+.content1 p{
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 40px;
+}
+
+.image {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover; /* This will make the image cover the available space */
+    margin-left: 80px;
+}
+
+.btn{
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px ;
+    margin-left: 150px;
+    border-radius: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+    background-color: aqua;
+}
+.titan {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-around; /* Evenly space the child elements */
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #e1c055;
+    width: auto;
+    height: 50vh;
+    border-radius: 15px;
+    padding: 20px; /* Add padding inside the div */
+    animation-name: aa;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes aa {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 50px;
+    }
+}
+
+.image1 {
+    flex: 1; /* Allow the image container to grow */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */  
+}
+
+.image1 img {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    max-height: 100%;
+    width: auto;
+    height: 45vh; /* Ensure the image does not exceed its container */
+    object-fit: cover; /* Cover the area without stretching */
+    border-radius: 15px;
+    
+}
+
+.content2 {
+    flex: 2; /* Allow the text container to take up twice as much space as the image */
+    padding: 0 20px; /* Add padding to the left and right of the text */
+}
+
+.content2 h1 {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 20px; /* Adjust the bottom margin */
+}
+
+.content2 p {
+    font-size: 20px; /* Adjust the font size for readability */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px; /* Adjust the bottom margin */
+}
+.page-4 {
+    opacity: 0.7;
+    background-image: url(https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    width: 205vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    animation-name: aa;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes aa {
+    from{
+        width: 0vh;
+    }
+    to{
+        width: 205vh;
+    }
+}  
+
+.page-4 p{
+    font-size:100px;
+    color:  #ffffff;
+    font-family: "Dancing Script", cursive;
+}
+.w3-quarter img{
+    margin-bottom: -6px; cursor: pointer
+}
+.w3-quarter img:hover{
+    opacity: 0.6; transition: 0.3s
+}
+.aa h1{
+    font-family: "Dancing Script", cursive;
+}
+.qqqq #btn{
+    width: 300px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(223,77,100,1) 35%, rgba(246,255,100,1) 100%);
+    margin-left: 166vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 20px;  
+    color: white;
+}
+.qqqq #btn:hover{
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+.qqqq #btn a{
+    text-decoration: none;
+}
+.aaaa #btn{
+    width: 300px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(223,77,100,1) 35%, rgba(246,255,100,1) 100%);
+    margin-left: 38px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 20px;  
+    color: white;
+}
+.aaaa #btn:hover{
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+.aaaa #btn a{
+    text-decoration: none;
+}
